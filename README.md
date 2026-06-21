@@ -4,6 +4,26 @@ Projeto da disciplina de organização de computadores: Uma Rede SPIN, uma arqui
 
 Este repositório contém a implementação em Verilog puro de um modelo de rede em chip (NoC) baseada na arquitetura SPIN. O projeto consiste em 8 roteadores estruturados em uma topologia fat-tree, oferecendo 32 portas de entrada e 32 portas de saída em seu nível base.
 
+## Estrutura de Diretórios
+```bash
+ .
+├──  hdl
+│   ├──  config.vh
+│   ├──  fifo.v
+│   ├──  rede_spin_top.v
+│   ├──  roteador_rspin.v
+│   ├──  unidade_dn.v
+│   ├──  unidade_q.v
+│   └──  unidade_up.v
+├── 󰂺 README.md
+├──  simulation
+│   └──  compile_run.sh
+└──  test
+    ├──  tb_fifo.v
+    ├──  tb_rede_spin_top.v
+    └──  tb_roteador_rspin.v
+```
+
 ## Arquivos
 
 ### 1. Diretório `hdl/` (Hardware Description Language)
