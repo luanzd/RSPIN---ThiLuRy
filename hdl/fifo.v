@@ -73,7 +73,7 @@ module fifo #(
                     count <= count - 1;
                 end
 
-                2'b11: begin  // Escrita e Leitura 
+                2'b11: begin  // Escrita e Leitura
                     mem[wptr] <= data_in;
                     data_out <= mem[rptr];
 
